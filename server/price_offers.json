@@ -1,0 +1,148 @@
+{
+  "priceOffers": [
+    {
+      "origin": "BER",
+      "destination": "CGN",
+      "departureDate": "2026-02-10",
+      "departureTime": "08:15",
+      "arrivalTime": "09:25",
+      "returnDate": "2026-02-12",
+      "seatAvailability": 9,
+      "price": { "amount": 89.99, "currency": "EUR" },
+      "offerType": "amadeusBestPrice",
+      "uuid": "PO-BER-CGN-0001"
+    },
+    {
+      "origin": "CGN",
+      "destination": "BER",
+      "departureDate": "2026-02-18",
+      "departureTime": "18:40",
+      "arrivalTime": "19:50",
+      "returnDate": "2026-02-21",
+      "seatAvailability": 6,
+      "price": { "amount": 92.50, "currency": "EUR" },
+      "offerType": "amadeusBestPrice",
+      "uuid": "PO-CGN-BER-0002"
+    },
+    {
+      "origin": "BER",
+      "destination": "CGN",
+      "departureDate": "2026-03-05",
+      "departureTime": "06:30",
+      "arrivalTime": "07:40",
+      "returnDate": "2026-03-07",
+      "seatAvailability": 4,
+      "price": { "amount": 105.00, "currency": "EUR" },
+      "offerType": "amadeusExactMatch",
+      "uuid": "PO-BER-CGN-0003"
+    },
+    {
+      "origin": "CGN",
+      "destination": "BER",
+      "departureDate": "2026-03-12",
+      "departureTime": "13:10",
+      "arrivalTime": "14:20",
+      "returnDate": "2026-03-15",
+      "seatAvailability": 8,
+      "price": { "amount": 99.00, "currency": "EUR" },
+      "offerType": "amadeusOptimizedPrice",
+      "uuid": "PO-CGN-BER-0004"
+    },
+    {
+      "origin": "BER",
+      "destination": "FRA",
+      "departureDate": "2026-04-01",
+      "departureTime": "09:45",
+      "arrivalTime": "10:55",
+      "returnDate": "2026-04-03",
+      "seatAvailability": 12,
+      "price": { "amount": 119.00, "currency": "EUR" },
+      "offerType": "amadeusBestPrice",
+      "uuid": "PO-BER-FRA-0005"
+    },
+    {
+      "origin": "FRA",
+      "destination": "BER",
+      "departureDate": "2026-04-10",
+      "departureTime": "17:30",
+      "arrivalTime": "18:40",
+      "returnDate": "2026-04-13",
+      "seatAvailability": 5,
+      "price": { "amount": 115.75, "currency": "EUR" },
+      "offerType": "amadeusExactMatch",
+      "uuid": "PO-FRA-BER-0006"
+    },
+    {
+      "origin": "BER",
+      "destination": "CGN",
+      "departureDate": "2026-02-10",
+      "departureTime": "14:20",
+      "arrivalTime": "15:15",
+      "returnDate": "2026-02-12",
+      "seatAvailability": 11,
+      "price": { "amount": 84.50, "currency": "EUR" },
+      "offerType": "amadeusOptimizedPrice",
+      "uuid": "PO-BER-CGN-0007"
+    },
+    {
+      "origin": "BER",
+      "destination": "CGN",
+      "departureDate": "2026-02-10",
+      "departureTime": "19:05",
+      "arrivalTime": "20:35",
+      "returnDate": "2026-02-12",
+      "seatAvailability": 3,
+      "price": { "amount": 78.00, "currency": "EUR" },
+      "offerType": "amadeusBestPrice",
+      "uuid": "PO-BER-CGN-0008"
+    },
+    {
+      "origin": "CGN",
+      "destination": "BER",
+      "departureDate": "2026-02-18",
+      "departureTime": "07:00",
+      "arrivalTime": "08:05",
+      "returnDate": "2026-02-21",
+      "seatAvailability": 10,
+      "price": { "amount": 88.00, "currency": "EUR" },
+      "offerType": "amadeusExactMatch",
+      "uuid": "PO-CGN-BER-0009"
+    },
+    {
+      "origin": "CGN",
+      "destination": "BER",
+      "departureDate": "2026-02-18",
+      "departureTime": "21:30",
+      "arrivalTime": "23:05",
+      "returnDate": "2026-02-21",
+      "seatAvailability": 2,
+      "price": { "amount": 72.99, "currency": "EUR" },
+      "offerType": "amadeusBestPrice",
+      "uuid": "PO-CGN-BER-0010"
+    },
+    {
+      "origin": "BER",
+      "destination": "FRA",
+      "departureDate": "2026-04-01",
+      "departureTime": "06:15",
+      "arrivalTime": "07:25",
+      "returnDate": "2026-04-03",
+      "seatAvailability": 14,
+      "price": { "amount": 110.00, "currency": "EUR" },
+      "offerType": "amadeusOptimizedPrice",
+      "uuid": "PO-BER-FRA-0011"
+    },
+    {
+      "origin": "FRA",
+      "destination": "BER",
+      "departureDate": "2026-04-10",
+      "departureTime": "11:50",
+      "arrivalTime": "13:30",
+      "returnDate": "2026-04-13",
+      "seatAvailability": 7,
+      "price": { "amount": 122.25, "currency": "EUR" },
+      "offerType": "amadeusOptimizedPrice",
+      "uuid": "PO-FRA-BER-0012"
+    }
+  ]
+}
