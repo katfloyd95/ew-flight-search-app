@@ -11,7 +11,7 @@ vi.mock('@/utils/dateUtils', () => ({
   formatDate: vi.fn(() => '01.01.2026')
 }))
 
-describe('OfferCard.vue', () => {
+describe('Behavior of Offer Card Component', () => {
   const mockOffer: PriceOffer = {
     origin: 'BER',
     destination: 'MAD',

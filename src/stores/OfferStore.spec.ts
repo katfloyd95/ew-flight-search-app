@@ -15,7 +15,7 @@ const createMockOffer = (overrides: Partial<PriceOffer> = {}): PriceOffer => ({
   ...overrides
 })
 
-describe('OfferStore', () => {
+describe('OfferStore Behavior', () => {
   beforeEach(() => {
     setActivePinia(createPinia())
   })

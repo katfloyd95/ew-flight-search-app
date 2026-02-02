@@ -65,7 +65,6 @@ const emit = defineEmits<{
 
 const local = ref<SearchCriteria>({ ...props.modelValue })
 
-// keep local state in sync if parent updates
 watch(
   () => props.modelValue,
   value => (local.value = { ...value })
@@ -110,11 +109,6 @@ function search() {
   align-items: center;
   align-self: flex-end;
 }
-@media (min-width: 768px) {
-  .fields {
-    flex-direction: row;
-  }
-}
 
 .field {
   flex: 1;
@@ -136,5 +130,10 @@ input {
   margin-top: 0.75rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .fields {
+    flex-direction: row;
+  }
 }
 </style>

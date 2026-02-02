@@ -4,9 +4,7 @@
     v-model="searchCriteria"
     @search="handleSearch"
     />
-    <SortingDropdown
-      v-model="store.sortBy"
-    />
+    <SortingDropdown />
     <OfferList />
   </main>
 </template>

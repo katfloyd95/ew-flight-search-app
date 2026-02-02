@@ -60,7 +60,7 @@ const formattedDuration = computed(() =>
   grid-template-columns: 1fr;
   gap: 0.75rem;
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 1px solid gray;
   border-radius: 0.5rem;
 }
 .info-section {
@@ -86,15 +86,15 @@ const formattedDuration = computed(() =>
   margin: 0;
 }
 
-@media (min-width: 768px) {
-  .info {
-    gap: 50px;
-  }
-}
-
 .price {
   font-size: 1.25rem;
   font-weight: bold;
   text-align: right;
+}
+
+@media (min-width: 768px) {
+  .info {
+    gap: 50px;
+  }
 }
 </style>

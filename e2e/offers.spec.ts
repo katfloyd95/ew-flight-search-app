@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Flight Offers E2E', () => {
+test.describe('End-to-End Flight Offer Search', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('http://localhost:5173');
   });

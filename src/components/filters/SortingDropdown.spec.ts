@@ -4,7 +4,7 @@ import { createTestingPinia } from '@pinia/testing'
 import SortingDropdown from './SortingDropdown.vue'
 import { useOfferStore } from '@/stores/OfferStore'
 
-describe('SortingDropdown.vue', () => {
+describe('Behavior of Sorting Dropdown', () => {
   const factory = (initialState = {}) => {
     return render(SortingDropdown, {
       global: {

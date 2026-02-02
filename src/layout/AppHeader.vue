@@ -9,6 +9,8 @@
 <style scoped>
 .header {
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
   background: #fff;
   border-bottom: 1px solid #eee;
 }
