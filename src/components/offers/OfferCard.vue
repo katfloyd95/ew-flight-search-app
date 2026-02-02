@@ -1,7 +1,7 @@
 <template>
   <article class="card">
     <div>
-      <h4>{{ formatDate(offer.departureDate) }}</h4>
+      <h3>{{ formatDate(offer.departureDate) }}</h3>
     </div>
     <div class="info-section">
       <div class="info">
