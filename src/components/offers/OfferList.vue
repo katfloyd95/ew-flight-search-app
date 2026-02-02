@@ -2,15 +2,15 @@
   <section aria-labelledby="offers-heading">
     <h2 id="offers-heading" class="visually-hidden">Flight offers</h2>
 
-    <div v-if="store.error" class="offer-loading-error">
+    <div v-if="store.loading" data-testid="loading" class="offer-loading">
+      <p>Loading flight offers…</p>
+    </div>
+
+    <div v-else-if="store.error" data-testid="error" class="offer-loading-error">
       <p>An error occurred while fetching flight offers.</p>
     </div>
 
-    <div v-else-if="store.error" class="offer-loading-error">
-      <p>An error occurred while fetching flight offers.</p>
-    </div>
-
-    <ul v-else class="list">
+    <ul v-else class="list" data-testid="offers-list">
       <li v-for="offer in offers" :key="offer.uuid">
         <OfferCard :offer="offer" />
       </li>
@@ -40,7 +40,8 @@ const offers = computed(() => store.filteredOffers)
   padding: 0;
   margin: 0;
 }
-.offer-loading-error {
+.offer-loading-error,
+.offer-loading {
   display: flex;
   align-items: center;
   justify-content: center;

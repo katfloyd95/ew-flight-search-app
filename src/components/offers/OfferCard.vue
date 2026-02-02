@@ -27,7 +27,7 @@
 
       <div class="price">
         <span aria-label="Price">
-          {{ offer.price.amount.toFixed(2) }} €
+          {{ offer.price?.amount?.toFixed(2) ?? '0.00' }} €
         </span>
       </div>
     </div>

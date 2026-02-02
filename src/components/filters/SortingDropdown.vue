@@ -12,7 +12,7 @@
     <ul
       v-if="open"
       class="sorting-menu"
-      role="sorting-list"
+      role="listbox"
     >
       <li
         v-for="option in options"

@@ -30,7 +30,6 @@ export const useOfferStore = defineStore('offers', {
               return (a.durationMinutes ?? 0) - (b.durationMinutes ?? 0)
 
             case 'date': {
-              // Proper chronological sorting (date + time)
               const dateA = new Date(`${a.departureDate}T${a.departureTime}`)
               const dateB = new Date(`${b.departureDate}T${b.departureTime}`)
               return dateA.getTime() - dateB.getTime()
@@ -38,7 +37,6 @@ export const useOfferStore = defineStore('offers', {
 
             case 'departureTime':
             default:
-              // Time-only sort (same-day comparison)
               return a.departureTime.localeCompare(b.departureTime)
           }
         })
@@ -51,6 +49,9 @@ export const useOfferStore = defineStore('offers', {
         this.loading = true
         this.error = false
         const res = await fetch('http://localhost:3001/api/price-offers')
+
+        if (!res.ok) throw new Error('Failed to fetch')
+
         const data = await res.json()
         this.offers = data.priceOffers
       } catch (err) {

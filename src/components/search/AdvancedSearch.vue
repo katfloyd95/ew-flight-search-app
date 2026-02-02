@@ -72,12 +72,13 @@ watch(
 )
 
 function search() {
-  emit('update:modelValue', local.value)
-  emit('search', {
+  const payload: SearchCriteria = {
     ...local.value,
-    origin: local.value.origin.toUpperCase(),
-    destination: local.value.destination.toUpperCase(),
-  })
+    origin: local.value.origin?.toUpperCase() ?? '',
+    destination: local.value.destination?.toUpperCase() ?? '',
+  }
+  emit('update:modelValue', local.value)
+  emit('search', payload)
 }
 </script>
 
@@ -131,6 +132,7 @@ input {
 }
 
 .search-btn {
+  min-height: 44px;
   margin-top: 0.75rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
