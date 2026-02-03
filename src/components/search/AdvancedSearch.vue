@@ -71,13 +71,14 @@ watch(
 )
 
 function search() {
-  const payload: SearchCriteria = {
+  const normalizedCriteria: SearchCriteria = {
     ...local.value,
-    origin: local.value.origin?.toUpperCase() ?? '',
-    destination: local.value.destination?.toUpperCase() ?? '',
+    origin: local.value.origin?.toUpperCase().trim() ?? '',
+    destination: local.value.destination?.toUpperCase().trim() ?? '',
   }
-  emit('update:modelValue', local.value)
-  emit('search', payload)
+
+  emit('update:modelValue', normalizedCriteria)
+  emit('search', normalizedCriteria)
 }
 </script>
 

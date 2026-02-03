@@ -29,8 +29,8 @@ const searchCriteria = ref<SearchCriteria>({
 function handleSearch(criteria: SearchCriteria) {
   store.originFilter = criteria.origin
   store.destinationFilter = criteria.destination
-  store.departureDateFilter = criteria.departureDate ?? ''
-  store.returnDateFilter = criteria.returnDate ?? ''
+  store.departureDateFilter = criteria.departureDate || ''
+  store.returnDateFilter = criteria.returnDate || ''
 }
 </script>
 

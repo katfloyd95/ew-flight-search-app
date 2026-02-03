@@ -18,8 +18,13 @@ export const useOfferStore = defineStore('offers', {
     filteredOffers(state): PriceOffer[] {
       return [...state.offers]
         .filter(o =>
-          (!state.originFilter || o.origin.includes(state.originFilter)) &&
-          (!state.destinationFilter || o.destination.includes(state.destinationFilter))
+        {
+          const originMatch = !state.originFilter || o.origin.toUpperCase().includes(state.originFilter.toUpperCase());
+          const destinationMatch = !state.destinationFilter || o.destination.toUpperCase().includes(state.destinationFilter.toUpperCase());
+          const departureMatch = !state.departureDateFilter || o.departureDate === state.departureDateFilter;
+          const returnMatch = !state.returnDateFilter || o.returnDate === state.returnDateFilter;
+          return originMatch && destinationMatch && departureMatch && returnMatch;
+        }
         )
         .sort((a, b) => {
           switch (state.sortBy) {
